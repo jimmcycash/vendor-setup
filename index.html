@@ -387,7 +387,13 @@ async function submitForm() {
   fd.append('Business Zip',    val('bill_zip'));
 
   // Contact
-  fd.append('Primary Contact Name', val('ct_name'));
+  fd.append('Remit Street', val('bill_street'));
+    fd.append('Remit City', val('bill_city'));
+    fd.append('Remit State', val('bill_state').toUpperCase());
+    fd.append('Remit Zip', val('bill_zip'));
+    fd.append('Primary Contact Name', val('ct_name'));
+    fd.append('Contact Email', val('ct_email'));
+    fd.append('Contact Phone', val('ct_phone'));
   fd.append('Contact Title',        val('ct_title'));
   fd.append('Contact Phone',        val('ct_phone'));
   fd.append('AP Payment Email',     val('ct_ap'));
